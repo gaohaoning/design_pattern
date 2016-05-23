@@ -36,14 +36,14 @@
 
 class Aggregate_abstract(object):
     """
-    抽象迭代器
+    抽象聚合类
     """
     def create_iterator(self):
         pass
 
 class Aggregate_concrete(Aggregate_abstract):
     """
-    具体迭代器
+    具体聚合类
     """
     def __init__(self):
         self.iterator = None
@@ -53,7 +53,7 @@ class Aggregate_concrete(Aggregate_abstract):
 
 class Iterator_abstract(object):
     """
-    抽象聚合类
+    抽象迭代器
     """
     def first_item(self):
         pass
@@ -66,7 +66,7 @@ class Iterator_abstract(object):
 
 class Iterator_concrete(Iterator_abstract):
     """
-    具体聚合类
+    具体迭代器
     """
     def __init__(self):
         self.container = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
